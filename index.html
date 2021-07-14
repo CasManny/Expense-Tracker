@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>expense tracker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="expense-container">
+            <h1 class="title">expense tracker</h1>
+            <div class="balance">
+                <h1 id="balance"> balance <br><span class="total-left">$0.00</span></h1>
+            </div>
+            <div class="expense-description">
+                <div class="income">
+                    <p>income</p>
+                    <p class="total-income">$0.000</p>
+                </div>
+                <div class="expenses">
+                    <p>expenses</p>
+                    <p class="total-expenses">$0.000</p>
+                </div>
+            </div>
+            <h4>history</h4>
+            <ul class="expense-list">
+                <!-- <li class="money plus">
+                    <span class="plus-text">school fees</span>
+                    <span class="plus-amount">+340000</span>
+                    <button class="delete">X</button>
+                </li>
+                <li class="money minus">
+                    <span class="minus-text">school fees</span>
+                    <span class="minus-amount">-340000</span>
+                    <button class="delete">X</button>
+                </li> -->
+            </ul>
+            <form action="" class="form" id="form">
+                <div class="form-control">
+                    <label for="name">Add a text</label>
+                    <input type="text" class="form-input text" placeholder="subject">
+                </div>
+                <div class="form-control">
+                    <label for="name">Add an amount <br> (negative - expenses, positive - income)</label>
+                    <input type="number" class="form-input budget-amount" placeholder="Enter amount" required>
+                </div>
+                <button class="submit">Add transaction</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
